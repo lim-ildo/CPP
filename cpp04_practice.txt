@@ -1,0 +1,213 @@
+// 1. Caesar cipher
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+
+{
+	string str;
+	int n;
+	char out[9];
+
+	cout << "Input string:";
+	cin >> str;
+
+	cout << "Input key:";
+	cin >> n;
+
+	out[0] = (str[0] - 65 + n) % 26 + 65;
+	out[1] = (str[1] - 65 + n) % 26 + 65;
+	out[2] = (str[2] - 65 + n) % 26 + 65;
+	out[3] = (str[3] - 65 + n) % 26 + 65;
+	out[4] = (str[4] - 65 + n) % 26 + 65;
+	out[5] = (str[5] - 65 + n) % 26 + 65;
+	out[6] = (str[6] - 65 + n) % 26 + 65;
+	out[7] = (str[7] - 65 + n) % 26 + 65;
+	out[8] = str[8];
+
+	cout << "Cipher string:" << out << endl;
+
+	return 0;
+
+}
+
+// 2. Decryption
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+
+{
+	string str;
+	int n;
+	char out[9];
+
+	cout << "Input string:";
+	cin >> str;
+
+	cout << "Input key:";
+	cin >> n;
+
+	out[0] = (str[0] + 65 - n) % 26 + 65;
+	out[1] = (str[1] + 65 - n) % 26 + 65;
+	out[2] = (str[2] + 65 - n) % 26 + 65;
+	out[3] = (str[3] + 65 - n) % 26 + 65;
+	out[4] = (str[4] + 65 - n) % 26 + 65;
+	out[5] = (str[5] + 65 - n) % 26 + 65;
+	out[6] = (str[6] + 65 - n) % 26 + 65;
+	out[7] = (str[7] + 65 - n) % 26 + 65;
+	out[8] = str[8];
+
+	cout << "Cipher string:" << out << endl;
+
+	return 0;
+
+}
+
+// 1. Caesar cipher
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+
+
+{
+	string str;
+	int n;
+
+	cout << "Input string:";
+	cin >> str;
+
+	cout << "Input key:";
+	cin >> n;
+
+	cout << "Cipher string:";
+	cout << (char)(str[0] + n);
+	cout << (char)(str[1] + n);
+	cout << (char)(str[2] + n);
+	cout << (char)(str[3] + n);
+	cout << (char)(str[4] + n);
+	cout << (char)(str[5] + n);
+	cout << (char)(str[6] + n);
+	cout << (char)(str[7] + n);
+	return 0;
+
+}
+
+// 2. Decryption
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+
+
+{
+	string str;
+	int n;
+
+	cout << "Input string:";
+	cin >> str;
+
+	cout << "Input key:";
+	cin >> n;
+
+	cout << "Decrypted string:";
+	cout << (char)(str[0] - n);
+	cout << (char)(str[1] - n);
+	cout << (char)(str[2] - n);
+	cout << (char)(str[3] - n);
+	cout << (char)(str[4] - n);
+	cout << (char)(str[5] - n);
+	cout << (char)(str[6] - n);
+	cout << (char)(str[7] - n);
+	return 0;
+
+}
+
+// 3. Quadrant
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	int x, y;
+	cout << "Input x: ";
+	cin >> x;
+	
+	cout << "Input y: ";
+	cin >> y;
+	
+	(x > 0 && y > 0) ? cout << "It is located in the 1st quadrant" :
+		(x < 0 && y > 0) ? cout << "It is located in the 2st quadrant" :
+		(x < 0 && y < 0) ? cout << "It is located in the 3st quadrant" :
+		(x > 0 && y < 0) ? cout << "It is located in the 4st quadrant" : cout << "It is located in the line" << endl;;
+
+	return 0;
+
+}
+
+// 4. Population
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	long long wpop, npop;
+	float ratio;
+	cout << "Enter the world's population: ";
+	cin >> wpop;
+
+	cout << "Enter the population of KOR: ";
+	cin >> npop;
+
+	ratio = (npop / (float)wpop);
+
+	cout.precision(3);
+	cout << "The population of KOR is " << ratio << "% of the world population" << endl;
+	return 0;
+
+}
+
+// 5. Your height
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	int height, cm, feet;
+	float inch;
+
+	cout << "Input your height ";
+	cin >> height;
+
+	cm = height;
+	inch = height / 2.54;
+	feet = inch / 12;
+	inch = inch - (12 * feet);
+
+	cout << cm << "cm is " << feet << "feet " << inch << "inch." << endl;
+	cout << inch;
+	return 0;
+
+}
