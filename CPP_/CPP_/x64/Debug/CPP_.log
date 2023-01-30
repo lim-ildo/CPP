@@ -1,0 +1,5 @@
+﻿  neuron01.cpp
+  neuron02.cpp
+C:\Users\AI02\Documents\GitHub\CPP\CPP_\CPP_\neuron02.cpp(166,16): warning C4101: 'or_' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다...
+  CPP_.vcxproj -> C:\Users\AI02\Documents\GitHub\CPP\CPP_\x64\Debug\CPP_.exe
